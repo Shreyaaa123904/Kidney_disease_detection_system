@@ -1,6 +1,8 @@
 import os
 import sys
 
+os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
+
 sys.path.append(os.path.abspath("src"))
 
 from cnnClassifier import logger

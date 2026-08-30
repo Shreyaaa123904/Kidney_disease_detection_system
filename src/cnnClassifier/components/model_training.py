@@ -1,6 +1,9 @@
 import os
 import urllib.request as request
 from zipfile import ZipFile
+
+os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
+
 import tensorflow as tf
 import time
 from pathlib import Path
